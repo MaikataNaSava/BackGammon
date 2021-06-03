@@ -48,7 +48,7 @@ public class Board {
             board.get(11).push(String.valueOf(obj.Black));
         }
         for(int i = 0; i < 5; i++) {
-            board.get(12).push(String.valueOf(obj.White);
+            board.get(12).push(String.valueOf(obj.White));
         }
         for(int i = 0; i < 3; i++) {
             board.get(16).push(String.valueOf(obj.Black));
