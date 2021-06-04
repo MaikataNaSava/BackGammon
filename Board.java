@@ -15,11 +15,11 @@ import java.util.Stack;
 public class Board {
 
     Stone obj = new Stone();
-
+    ArrayList<Stack<Board>> board = new ArrayList<>();
     public void tablaBoard() {//местата на пуловете по дифолт
 //трябва да го линкнем с панелите 
         System.out.println(" ");
-        ArrayList<Stack<Board>> board = new ArrayList<>();
+        
         for (int i = 0; i < 24; i++) {
             board.add(new Stack<Board>());
         }
@@ -35,37 +35,37 @@ public class Board {
     }
 
     public String position(ArrayList<Stack<String>> board) {//първоначално нареждане на пуловете за табла
-        for(int i = 0; i < 2; i++) {
+        for (int i = 0; i < 2; i++) {
             board.get(0).push(String.valueOf(obj.Black));
         }
-        for(int i = 0; i < 5; i++) {
+        for (int i = 0; i < 5; i++) {
             board.get(5).push(String.valueOf(obj.Red));
         }
-        for(int i = 0; i < 3; i++) {
+        for (int i = 0; i < 3; i++) {
             board.get(7).push(String.valueOf(obj.Red));
         }
-        for(int i = 0; i < 5; i++) {
+        for (int i = 0; i < 5; i++) {
             board.get(11).push(String.valueOf(obj.Black));
         }
-        for(int i = 0; i < 5; i++) {
+        for (int i = 0; i < 5; i++) {
             board.get(12).push(String.valueOf(obj.Red));
         }
-        for(int i = 0; i < 3; i++) {
+        for (int i = 0; i < 3; i++) {
             board.get(16).push(String.valueOf(obj.Black));
         }
-        for(int i = 0; i < 5; i++) {
+        for (int i = 0; i < 5; i++) {
             board.get(18).push(String.valueOf(obj.Black));
         }
-        for(int i = 0; i < 2; i++) {
+        for (int i = 0; i < 2; i++) {
             board.get(23).push(String.valueOf(obj.Red));
         }
         return null;
     }
 
-public static void main(String[] args){
- Board obj = new Board();
- obj.tablaBoard();
+    public static void main(String[] args) {
+        Board obj = new Board();
+        obj.tablaBoard();
 //System.out.println(obj.position(board));
-}
+    }
 
 }
