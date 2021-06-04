@@ -1,3 +1,4 @@
+  
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -14,12 +15,12 @@ import java.util.Stack;
 public class Stone {
 
     //public String type = null;
-    public Stack<String> White = new Stack<>();
+    public Stack<String> Red = new Stack<>();
     public Stack<String> Black = new Stack<>();
 
     public String stones() {
         for (int i = 0; i < 15; i++) {
-            White.push("White");
+            Red.push("Red");
         }
         for (int i = 0; i < 15; i++) {
             Black.push("Black");

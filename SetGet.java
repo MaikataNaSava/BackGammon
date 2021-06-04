@@ -1,10 +1,11 @@
 package backgammon;
 
 public class SetGet {
-    private int StoneCount;
-    private int moves;
-    private int homeW = 0;
-    private int homeB = 0;
+    private int StoneCount;//колко останали имаш на полето
+    private int moves;//движение
+    private int homeW = 0;//изхвърляне на пул бял
+    private int homeB = 0;//изхвърляне на пул черен
+    
 
     public int getHomeW() {
         return homeW;

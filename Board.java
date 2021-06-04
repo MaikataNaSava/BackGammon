@@ -34,21 +34,21 @@ public class Board {
         board[23] = 2;//W*/
     }
 
-    public String position(ArrayList<Stack<String>> board) {
+    public String position(ArrayList<Stack<String>> board) {//първоначално нареждане на пуловете за табла
         for(int i = 0; i < 2; i++) {
             board.get(0).push(String.valueOf(obj.Black));
         }
         for(int i = 0; i < 5; i++) {
-            board.get(5).push(String.valueOf(obj.White));
+            board.get(5).push(String.valueOf(obj.Red));
         }
         for(int i = 0; i < 3; i++) {
-            board.get(7).push(String.valueOf(obj.White));
+            board.get(7).push(String.valueOf(obj.Red));
         }
         for(int i = 0; i < 5; i++) {
             board.get(11).push(String.valueOf(obj.Black));
         }
         for(int i = 0; i < 5; i++) {
-            board.get(12).push(String.valueOf(obj.White));
+            board.get(12).push(String.valueOf(obj.Red));
         }
         for(int i = 0; i < 3; i++) {
             board.get(16).push(String.valueOf(obj.Black));
@@ -57,8 +57,15 @@ public class Board {
             board.get(18).push(String.valueOf(obj.Black));
         }
         for(int i = 0; i < 2; i++) {
-            board.get(23).push(String.valueOf(obj.White));
+            board.get(23).push(String.valueOf(obj.Red));
         }
         return null;
     }
+
+public static void main(String[] args){
+ Board obj = new Board();
+ obj.tablaBoard();
+//System.out.println(obj.position(board));
+}
+
 }
