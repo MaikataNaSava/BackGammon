@@ -16,8 +16,12 @@ public class GamePlay {//движение на играта
 
     public void RedMoves() {
         for (int i = 0; i < 24; i++) {
-            if (obj.board.get(0)/*.push(String.valueOf(ob.Black))*/) {
-
+            if (obj.board.get(i) != null) {
+                if(obj.board.get(i).){
+                    
+                }
+            } else {
+                
             }
         }
     }

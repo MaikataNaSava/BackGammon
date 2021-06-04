@@ -42,8 +42,8 @@ public class SetGet {
     }
 
     public void setStoneCount(int stoneCount) {
-        if(StoneCount <= 0 && StoneCount >= 30){
-        StoneCount = stoneCount;
+        if (StoneCount <= 0 && StoneCount >= 30) {
+            StoneCount = stoneCount;
         }
     }
 
